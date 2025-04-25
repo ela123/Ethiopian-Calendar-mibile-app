@@ -10,5 +10,3 @@ class Homelist extends StatelessWidget {
       );
   }
 }
-
-Widget 
