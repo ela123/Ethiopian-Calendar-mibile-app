@@ -7,7 +7,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     // Get the screen width
     final double screenWidth = MediaQuery.of(context).size.width;
-    
+
     return AppBar(
       backgroundColor: const Color.fromARGB(27, 78, 75, 73),
       title: Row(
@@ -19,22 +19,18 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             icon: Icon(
               Icons.menu,
               color: Colors.black,
-              size: screenWidth * 0.08, // Responsive icon size (8% of screen width)
+              size:
+                  screenWidth *
+                  0.08, // Responsive icon size (8% of screen width)
             ),
           ),
           Text(
             'Home',
             style: TextStyle(
-              fontSize: screenWidth * 0.07, // Responsive text size (7% of screen width)
+              fontSize:
+                  screenWidth *
+                  0.07, // Responsive text size (7% of screen width)
               fontFamily: 'Samantha',
-              color: Colors.black,
-            ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.dark_mode_sharp,
-              size: screenWidth * 0.08, // Responsive icon size
               color: Colors.black,
             ),
           ),
