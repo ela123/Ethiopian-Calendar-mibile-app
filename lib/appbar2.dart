@@ -1,22 +1,17 @@
 import 'package:flutter/material.dart';
 
-class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
+class AppBar2 extends StatelessWidget implements PreferredSizeWidget {
   final dynamic title;
-  final IconData? leadingIcon;
-  const CustomAppBar({
-    super.key,
-    required this.title,
-    required this.leadingIcon,
-  });
+  
+  const AppBar2({super.key, required this.title});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context ) {
     // Get the screen width
     final double screenWidth = MediaQuery.of(context).size.width;
 
     return AppBar(
-      automaticallyImplyLeading: leadingIcon == null,
-      backgroundColor: const Color.fromARGB(27, 168, 164, 161).withOpacity(0.7),
+      backgroundColor: const Color.fromARGB(27, 78, 75, 73),
       title: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -24,7 +19,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           IconButton(
             onPressed: () {},
             icon: Icon(
-              leadingIcon,
+              Icons.menu,
               color: Colors.black,
               size:
                   screenWidth *

@@ -59,8 +59,7 @@ flutter:
     - assets/background.jpg
     - assets/Getatchew_Haile.jpg
     - assets/cal.jpg
-    - assets/Learn.jpg
-    - 
+    - assets/Learn.jpg 
     - assets/lost_day.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
