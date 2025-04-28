@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home.dart'; // Import your home page
-import 'background.dart';
+//import 'home.dart'; // Import your home page
+//import 'background.dart';
 import 'list.dart';
 void main() {
   runApp(const MyApp());
