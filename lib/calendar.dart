@@ -13,17 +13,82 @@ class Calendar extends StatelessWidget {
       body: Stack(
         children: [
           Background(),
-          Center(  // Add Center to properly center the Column
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start, // Center vertically
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                input1(context),
-                HeaderWithSubtitle(
-                  header: "Welcome",
-                  subtitle: "Please enter your details below",
-                ),
-              ],
+          SingleChildScrollView(
+            child: Center(  // Add Center to properly center the Column
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start, // Center vertically
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top:10 ),
+                    child: input1(context),
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ዘመን",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ዐወደ ዓመት",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "አበቅቴ",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "መጥቅዕ",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ነነዌ",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ዐቢይ ጾም",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ደብረ ዘይት",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ደብረ ዘይት",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ሆሣዕና",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ስቅለት",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ትንሣኤ",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ርክበ ካህናት",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ዕርገት",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ጰራቅሊጦስ",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ጸመ ሐዋርያት (የሰኔ ጾም)",
+                    subtitle: "Please enter your details below",
+                  ),
+                  HeaderWithSubtitle(
+                    header: "ጸመ ድኅነት",
+                    subtitle: "Please enter your details below",
+                  ),
+                ],
+              ),
             ),
           ),
         ],

@@ -14,26 +14,34 @@ class HeaderWithSubtitle extends StatelessWidget {
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start, // align text to the left
-      children: [
-        Text(
-          header,
-          style: TextStyle(
-            fontSize: screenWidth * 0.05, // 7% of screen width
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
+    return Container(
+      margin: const EdgeInsets.all(2), // space around
+      padding: const EdgeInsets.all(10), // space inside the box
+      decoration: BoxDecoration(
+        color: Colors.black.withOpacity(0.8), // ✅ background with 0.8 opacity
+        borderRadius: BorderRadius.circular(12), // rounded corners
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start, // align text to the left
+        children: [
+          Text(
+            header,
+            style: TextStyle(
+              fontSize: screenWidth * 0.05,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
           ),
-        ),
-        Text(
-          subtitle,
-          style: TextStyle(
-            fontSize: screenWidth * 0.35, // 4.5% of screen width
-            color: Colors.white70,
+          //SizedBox(height: 1), // small space between header and subtitle
+          Text(
+            subtitle,
+            style: TextStyle(
+              fontSize: screenWidth * 0.045,
+              color: Colors.white70,
+            ),
           ),
-        ),
-      ],
-      
+        ],
+      ),
     );
   }
 }

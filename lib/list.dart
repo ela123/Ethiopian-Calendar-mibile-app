@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'background.dart';
 import 'appbar.dart';
 import 'calendar.dart';
+import 'learn.dart';
 class Listmenu extends StatelessWidget {
   const Listmenu({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: "Home",leadingIcon:Icons.menu,),
+      appBar: CustomAppBar(title: "Home",leadingIcon:Icons.menu, ),
       body: Stack(
         children: [
           Background(), // background at the bottom
@@ -20,9 +21,9 @@ class Listmenu extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  customText(context, "Calculate The Calendar", "assets/cal.jpg"),
-                  customText(context, "Learn", "assets/Learn.jpg"),
-                  customText(context, "calculate Lost Day ", "assets/lost_day.png"),
+                  customText(context, "Calculate The Calendar", "assets/cal.jpg", Calendar()),
+                  customText(context, "Learn", "assets/Learn.jpg", Learn()),
+                  customText(context, "calculate Lost Day ", "assets/lost_day.png", Calendar()),
                   ],
               ),
             ),
@@ -33,14 +34,14 @@ class Listmenu extends StatelessWidget {
   }
 }
 
-Widget customText(BuildContext context, String text, String image) {
+Widget customText(BuildContext context, String text, String image,Widget location) {
   final double screenWidth = MediaQuery.of(context).size.width;
   return GestureDetector(
     onTap:() {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => Calendar(), 
+          builder: (context) => location, 
         ),
       );
     },
