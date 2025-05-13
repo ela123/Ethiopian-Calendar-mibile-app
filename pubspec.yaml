@@ -51,17 +51,15 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
-flutter:
-  uses-material-design: true
-
-  assets:
+assets:
     - assets/background.jpg
     - assets/Getatchew_Haile.jpg
     - assets/cal.jpg
-    - assets/Learn.jpg 
+    - assets/Learn.jpg
     - assets/lost_day.png
 
-  fonts:
+
+fonts:
     - family: NotoSansEthiopic
       fonts:
         - asset: assets/fonts/NotoSansEthiopic-Regular.ttf
